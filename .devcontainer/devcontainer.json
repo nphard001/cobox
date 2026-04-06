@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install",
+  "updateContentCommand": "npm install && (command -v uv || curl -LsSf https://astral.sh/uv/install.sh | sh)",
   "postCreateCommand": "",
   "postAttachCommand": {
     "server": "npm start"
